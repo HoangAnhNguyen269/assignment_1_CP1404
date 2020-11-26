@@ -4,16 +4,21 @@ def password_check(password):
         return False
     else:
         return True
+
+
 def asterisk(password):
     for count in range(len(password)):
-        print('*',end='')
-    
+        print('*', end='')
+
 
 def main():
-    password = input('Enter password: ')
+    password = get_password()
     while password_check(password) == False:
         password = input('Enter password: ')
     print('Valid password')
     asterisk(password)
 
-main()
+
+def get_password():
+    password = input('Enter password: ')
+    return password
