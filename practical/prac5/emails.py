@@ -1,3 +1,7 @@
+"""
+CP1404/CP5632 Practical
+Store Emails
+"""
 email= input('Emails: ')
 name_to_email ={}
 while email != '':

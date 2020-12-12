@@ -1,3 +1,7 @@
+"""
+CP1404/CP5632 Practical
+Word frequency
+"""
 text = input('Text: ')
 text=text.split(' ')
 word_to_num={}
