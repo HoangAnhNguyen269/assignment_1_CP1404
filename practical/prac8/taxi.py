@@ -1,6 +1,6 @@
 """
 CP1404 Practical
-Car class
+Taxi class - derived from Car class
 """
 from car import Car
 
