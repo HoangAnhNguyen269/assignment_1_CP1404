@@ -35,7 +35,7 @@ def main():
 
         # TODO: Try these options one at a time
         # Option 1: rename file to new name - in place
-        #os.rename(filename, new_name)
+        # os.rename(filename, new_name)
 
         # Option 2: move file to new place, with new name
         shutil.move(filename, 'temp/' + new_name)
@@ -58,7 +58,10 @@ def demo_walk():
 
         # TODO: add a loop to rename the files
         for filename in filenames:
-            new_name = get_fixed_filename(filename)
-            os.rename(filename,new_name)
-#main()
+            initial_name = os.path.join(directory_name, filename)
+            new_name = os.path.join(directory_name, get_fixed_filename(filename))
+            os.rename(initial_name, new_name)
+
+
+# main()
 demo_walk()
