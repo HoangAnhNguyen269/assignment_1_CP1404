@@ -1,5 +1,3 @@
-class Phone:
-    def __init__(self):
-
-    def __str__(self) -> str:
-        return super().__str__()
+a ="quanho"
+a = a[:2] +' '+a[2:]
+print(a)
